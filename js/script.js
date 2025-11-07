@@ -1423,7 +1423,7 @@ const FloatingActions = {
         const downloadResume = document.getElementById('downloadResume');
 
         // Path where the resume PDF should be placed. Place your CV at: /assets/Hans_Resume.pdf
-        const RESUME_PATH = '/assets/Hans_Resume.pdf';
+        const RESUME_PATH = '/assets/hans_resume.pdf';
 
         function triggerDownload(url, filename) {
             const a = document.createElement('a');
@@ -1445,9 +1445,9 @@ const FloatingActions = {
                     // Small delay so the toast is visible before download starts
                     setTimeout(() => {
                         try {
-                            triggerDownload(RESUME_PATH, 'Hans_Resume.pdf');
+                            triggerDownload(RESUME_PATH, 'hans_resume.pdf');
                             // Note: browser will handle the download; if the file is missing the server will return 404.
-                            Toast.show('If the download did not start, please place your resume at /assets/Hans_Resume.pdf', 'info', 4000);
+                            Toast.show('If the download did not start, please place your resume at /assets/hans_resume.pdf', 'info', 4000);
                         } catch (err) {
                             console.error('Download error:', err);
                             Toast.show('Failed to start download. Make sure resume file exists in /assets/', 'error');
